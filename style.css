@@ -3,6 +3,7 @@
     grid-template-columns: auto auto auto;
     background-color: #2196F3;
     padding: 10px;
+    width: 300px;
 }
 
 .grid-item {
@@ -11,16 +12,20 @@
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    height: 50px;
+    width: 50px;
   }
 
-  .cell--x{
-    background-color: red;
+
+
+  .cell--x:before{
+    content: "X";
   }
 
-  .cell--o{
-    background-color: yellow;
+  .cell--o:before{
+    content: "O";
   }
 
   .cell--empty{
-    background-color: #2196F3;
+    content: "";
 }
